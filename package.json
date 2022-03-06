@@ -1,0 +1,38 @@
+{
+  "name": "clueless-admin",
+  "version": "1.0.0",
+  "description": "This is the ClueLess Community Admin Pannel.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --config nodemon.json src/app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.7",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.2.4",
+    "node-fetch": "^3.2.1",
+    "nodemon": "^2.0.15",
+    "pino": "^7.8.0",
+    "pino-pretty": "^7.5.3",
+    "tsc": "^2.0.4",
+    "typescript": "^4.6.2",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@types/config": "^0.0.41",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/lodash": "^4.14.179",
+    "@types/node": "^17.0.21",
+    "@types/node-fetch": "^2.6.1",
+    "@types/pino": "^7.0.5",
+    "@types/yup": "^0.29.13",
+    "ts-node": "^10.7.0"
+  }
+}
