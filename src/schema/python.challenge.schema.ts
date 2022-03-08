@@ -30,21 +30,26 @@ const pythonSchema = new mongoose.Schema({
   },
   week: {
     type: Number,
+    required: true
   },
   name: {
     type: String,
+    required: true
   },
   description: {
-    type: [String],
+    type: String,
   },
   xp: {
     type: Number,
   },
-
+  sol_link: {
+    type: String
+  },
   participants_no: {
     type: Number,
     required: true,
-  },
+    default: 0
+    },
   participants:participantsSchema
 });
 

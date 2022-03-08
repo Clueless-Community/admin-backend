@@ -15,17 +15,14 @@ const infoSchema = new mongoose.Schema({
         required: true,
       },
       description: {
-        type: [String],
-        required:true
+        type: String,
       },
       contributor:{
           type:String,
           required:true
-
       },
       social_link:{
         type:String,
-        required:true
       }
 })
 const resourcesSchema = new mongoose.Schema({
