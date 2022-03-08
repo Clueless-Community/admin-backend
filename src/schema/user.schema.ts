@@ -10,18 +10,15 @@ const projectSchema = new mongoose.Schema({
     required: true,
   },
   description: {
-    type: [String],
-  },
-  codepen_link: {
     type: String,
   },
   gitHub_link: {
     type: String,
+    required: true,
   },
 
   deployed_url: {
     type: String,
-    required: true,
   },
 });
 
@@ -33,24 +30,19 @@ const UserSchema = new mongoose.Schema({
   },
   image: {
     type: String,
-    required: true,
   },
   email: {
     type: String,
     required: true,
-    unique: true,
   },
   college: {
     type: String,
-    required: true,
   },
   gitHub_link: {
     type: String,
-    required: true,
   },
   twitter_link: {
     type: String,
-    required: true,
   },
 
   linkedIn_link: {
@@ -60,26 +52,25 @@ const UserSchema = new mongoose.Schema({
 
   portfolio_link: {
     type: String,
-    required: true,
   },
   blog_link: {
     type: String,
-    required: true,
   },
   description: {
-    type: [String],
-    required: true,
+    type: String,
   },
   tech_stack: {
     type: Array,
-    required: true,
-    unique: true,
   },
   xp: {
     type: Number,
+    required: true,
+    default: 0
   },
   level: {
     type: Number,
+    required: true,
+    default: 0
   },
   badges: {
     type: Array,

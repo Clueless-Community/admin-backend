@@ -11,11 +11,9 @@ const participantsSchema = new mongoose.Schema({
   },
   result_link: {
     type: String,
-    required: true,
   },
   pass: {
     type: Boolean,
-    required: true,
   },
 });
 
@@ -37,21 +35,20 @@ const csschallengeSchema = new mongoose.Schema({
     required: true
   },
   description: {
-    type: [String],
-    required: true
+    type: String,
   },
   xp: {
     type: Number,
-    required: true
   },
-  codepen_link:{
+  sol_link:{
     type:String,
     required:true
   },
   participants_no: {
     type: Number,
     required: true,
-  },
+    default:0
+    },
   participants:participantsSchema
 });
 

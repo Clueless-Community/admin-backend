@@ -11,11 +11,9 @@ const participantsSchema = new mongoose.Schema({
   },
   result_link: {
     type: String,
-    required: true,
   },
   pass: {
     type: Boolean,
-    required: true,
   },
 });
 
@@ -30,23 +28,25 @@ const jschallengeSchema = new mongoose.Schema({
   },
   week: {
     type: Number,
+    required: true,
   },
   name: {
     type: String,
   },
   description: {
-    type: [String],
+    type: String,
   },
   xp: {
     type: Number,
   },
-  codesandbox_link:{
+  sol_link:{
     type:String,
     required:true
   },
   participants_no: {
     type: Number,
     required: true,
+    default: 0
   },
   participants:participantsSchema
 });

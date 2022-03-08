@@ -24,12 +24,10 @@ const opensourceSchema = new mongoose.Schema({
   },
   linkedin: {
     type: String,
-    required: true,
   },
 
   description: {
     type: Array,
-    required: true,
   },
 });
 export default opensourceSchema;
