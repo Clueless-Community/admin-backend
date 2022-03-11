@@ -2,6 +2,7 @@ import express, { Request, Response } from 'express'
 import config from 'config'
 import cors from 'cors'
 import { logger } from './logger';
+import connectiondb from './db/connectdb';
 
 // App Reciving Config
 const port: number  = config.get('port') as number;
@@ -20,5 +21,6 @@ const host: string = config.get('host') as string;
  })
 
  app.listen(port, host, () => {
-    logger.info(`Server running on http://${host}:${port}`)
+    logger.info(`Server running on http://${host}:${port}`);
+    connectiondb();
  })
