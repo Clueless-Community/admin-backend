@@ -1,5 +1,7 @@
+import 'dotenv/config'
+
 export default{
     port: 1337,
     host: 'localhost',
-    dbURI: '',
+    dbURI: process.env.dbURI,
 }
